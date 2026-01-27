@@ -1,0 +1,19 @@
+﻿title: dialogueTest
+---
+Speaking Steve: I'm talking right now
+Speaking Steve: Still talking
+-> No I'm talking
+	<<jump responseOne>>
+-> *remain silent*
+	<<jump responseTwo>>
+===
+
+title: responseOne
+---
+Speaking Steve: Okay :(
+===
+
+title: responseTwo
+---
+Speaking Steve: I may never stop talking
+===
