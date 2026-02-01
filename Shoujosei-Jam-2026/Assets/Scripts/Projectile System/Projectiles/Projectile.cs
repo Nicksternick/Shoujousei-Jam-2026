@@ -1,22 +1,18 @@
+using System;
 using UnityEngine;
 
 public abstract class Projectile : MonoBehaviour
 {
-    //protected delegate void OnPlayerHit(BattlePlayerController player);
-
-    //protected OnPlayerHit onPlayerHit;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //onPlayerHit += (BattlePlayerController player) => { Debug.Log($"{player.gameObject.name} entered projectile"); };
-    }
-
+    public float speed;
+    public Vector3 direction;
+    public float turnFactor = 1;
+    public int damage;
+    public virtual ProjectileType Type => ProjectileType.None;
+    public Type ClassType => GetType();
     private void FixedUpdate()
     {
         transform.position = Move(transform);
     }
-
     public abstract Vector3 Move(Transform transform);
     public abstract void OnPlayerHit(BattlePlayerController player);
 

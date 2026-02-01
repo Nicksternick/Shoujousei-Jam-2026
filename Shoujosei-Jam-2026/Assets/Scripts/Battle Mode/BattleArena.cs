@@ -38,4 +38,63 @@ public class BattleArena : MonoBehaviour
     {
         get { return collider.bounds.center; }
     }
+
+    public Vector3 CenterOnState()
+    {
+        return Center;
+    }
+
+    public Vector3 ClampToStageX(Vector3 position)
+    {
+        position.x = Mathf.Clamp(position.x, MinX, MaxX);
+        return position;
+    }
+
+    public Vector3 ClampToStageX(Vector3 position, out bool hasClamped)
+    {
+        float originalX = position.x;
+
+        position = ClampToStageX(position);
+
+        hasClamped = originalX != position.x;
+
+        return position;
+    }
+
+    public Vector3 ClampToStageY(Vector3 position)
+    {
+        position.y = Mathf.Clamp(position.y, MinY, MaxY);
+        return position;
+    }
+
+    public Vector3 ClampToStageY(Vector3 position, out bool hasClamped)
+    {
+        float originalY = position.y;
+
+        position = ClampToStageY(position);
+
+        hasClamped = originalY != position.y;
+
+        return position;
+    }
+
+    public Vector3 ClampToStage(Vector3 position)
+    {
+        position.x = Mathf.Clamp(position.x, MinX, MaxX);
+        position.y = Mathf.Clamp(position.y, MinY, MaxY);
+
+        return position;
+    }
+
+    public Vector3 ClampToStage(Vector3 position, out bool hasClamped)
+    {
+        float originalX = position.x;
+        float originalY = position.y;
+
+        position = ClampToStage(position);
+
+        hasClamped = originalX != position.x || originalY != position.y;
+
+        return position;
+    }
 }

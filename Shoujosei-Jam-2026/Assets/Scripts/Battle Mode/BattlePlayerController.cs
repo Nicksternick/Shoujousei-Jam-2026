@@ -16,12 +16,12 @@ public class BattlePlayerController : MonoBehaviour
     private void Awake()
     {
         move = input.actions.FindAction("Move");
-        BattleManager.instance.UpdatePlayerHealthUI(health);
+        BattleManager.Instance.UpdatePlayerHealthUI(health);
     }
 
     private void Start()
     {
-        transform.position = BattleManager.instance.CenterOnState();
+        //transform.position = BattleManager.Instance.Arena.CenterOnState();
     }
 
     private void FixedUpdate()
@@ -31,7 +31,7 @@ public class BattlePlayerController : MonoBehaviour
 
         position += velocity;
 
-        position = BattleManager.instance.ClampToStage(position);
+        position = BattleManager.Instance.Arena.ClampToStage(position);
 
         transform.position = Vector3.SmoothDamp(transform.position, position, ref refVelocity, dampFactor);
     }
@@ -39,6 +39,6 @@ public class BattlePlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        BattleManager.instance.UpdatePlayerHealthUI(health);
+        BattleManager.Instance.UpdatePlayerHealthUI(health);
     }
 }
