@@ -1,49 +1,95 @@
 using UnityEngine;
 
+public enum ArenaPoints
+{
+    Random,
+    Center,
+    TopLeft,
+    Top,
+    TopRight,
+    BottomLeft,
+    Bottom,
+    BottomRight,
+    Left,
+    Right,
+}
+
 public class BattleArena : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D collider;
-    private float xOffset;
-    private float yOffset;
-    private Vector3 xyOffset;
 
-    private void Awake()
+    public float MinX => collider.bounds.min.x;
+
+    public float MinY => collider.bounds.min.y;
+
+    public float MaxX => collider.bounds.max.x;
+
+    public float MaxY => collider.bounds.max.y;
+
+    public Vector3 Center => collider.bounds.center;
+
+
+    public Vector3 GetArenaPoint(ArenaPoints pointType, float offset = 0)
     {
-        xOffset = transform.position.x;
-        yOffset = transform.position.y;
-        xyOffset = new Vector3(xOffset, yOffset);
+        float x;
+        float y;
+        switch (pointType)
+        {
+            case ArenaPoints.Random:
+                x = Random.Range(MinX + offset, MaxX - offset);
+                y = Random.Range(MinY + offset, MaxY - offset);
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.Center:
+                return Center;
+
+            case ArenaPoints.Left:
+                x = MinX + offset;
+                y = Center.y;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.Right:
+                x = MaxX - offset;
+                y = Center.y;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.Top:
+                x = Center.x;
+                y = MaxY - offset;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.Bottom:
+                x = Center.x;
+                y = MinY + offset;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.TopLeft:
+                x = MinX + offset;
+                y = MaxY - offset;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.TopRight:
+                x = MaxX - offset;
+                y = MaxY - offset;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.BottomLeft:
+                x = MinX + offset;
+                y = MinY + offset;
+                return new Vector3(x, y, 0);
+
+            case ArenaPoints.BottomRight:
+                x = MaxX - offset;
+                y = MinY + offset;
+                return new Vector3(x, y, 0);
+
+            default:
+                Debug.LogError("No Arena Point Chosen");
+                return Center;
+        }
     }
 
-    public float MinX
-    {
-        get { return collider.bounds.min.x; }
-    }
-
-    public float MinY
-    {
-        get { return collider.bounds.min.y; }
-    }
-
-    public float MaxX
-    {
-        get { return collider.bounds.max.x; }
-    }
-
-    public float MaxY
-    {
-        get { return collider.bounds.max.y; }
-    }
-
-    public Vector3 Center
-    {
-        get { return collider.bounds.center; }
-    }
-
-    public Vector3 CenterOnState()
-    {
-        return Center;
-    }
-
+    #region Clamping Functions
     public Vector3 ClampToStageX(Vector3 position)
     {
         position.x = Mathf.Clamp(position.x, MinX, MaxX);
@@ -97,4 +143,5 @@ public class BattleArena : MonoBehaviour
 
         return position;
     }
+    #endregion
 }

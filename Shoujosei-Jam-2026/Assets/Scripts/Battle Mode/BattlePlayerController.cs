@@ -2,6 +2,13 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerStateMachine
+{
+    Normal,
+    Charging,
+    Damage
+}
+
 public class BattlePlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerInput input;
@@ -19,11 +26,6 @@ public class BattlePlayerController : MonoBehaviour
         BattleManager.Instance.UpdatePlayerHealthUI(health);
     }
 
-    private void Start()
-    {
-        //transform.position = BattleManager.Instance.Arena.CenterOnState();
-    }
-
     private void FixedUpdate()
     {
         Vector3 position = transform.position;
@@ -34,6 +36,19 @@ public class BattlePlayerController : MonoBehaviour
         position = BattleManager.Instance.Arena.ClampToStage(position);
 
         transform.position = Vector3.SmoothDamp(transform.position, position, ref refVelocity, dampFactor);
+    }
+    
+    public void EnterState(PlayerStateMachine state)
+    {
+        switch (state)
+        {
+            case PlayerStateMachine.Normal:
+                break;
+            case PlayerStateMachine.Charging:
+                break;
+            case PlayerStateMachine.Damage:
+                break;
+        }
     }
 
     public void TakeDamage(int damage)
