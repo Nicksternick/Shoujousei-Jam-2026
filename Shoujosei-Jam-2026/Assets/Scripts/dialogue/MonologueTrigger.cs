@@ -15,6 +15,7 @@ public class MonologueTrigger : MonoBehaviour
         {
             Debug.Log("Dialogue Runner not set on " + gameObject.name);
         }
+        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -23,7 +24,7 @@ public class MonologueTrigger : MonoBehaviour
         if (player)
         {
             if (!dialogueRunner.IsDialogueRunning)
-                dialogueRunner.StartDialogue(nodeName);
+               dialogueRunner.StartDialogue(nodeName);
         }
     }
 }
