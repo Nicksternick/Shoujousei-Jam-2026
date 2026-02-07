@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using static Unity.Burst.Intrinsics.X86;
 
 public class OverworldEncounterManager : MonoBehaviour
 {
@@ -9,13 +11,21 @@ public class OverworldEncounterManager : MonoBehaviour
     private Tilemap collisionMap;
     [SerializeField]
     private float encounterChance;
+    [SerializeField]
+    private EnemyData enemyData;
     
     public void OnTriggerEnter2D(Collider2D collision)
     {
-       if(Random.Range(0, 1.0f) < encounterChance)
-       {
-            Debug.Log("Trigger Encounter");
-       }
+        var player = collision.GetComponent<OverworldPlayerController>();
+        if(player != null)
+        {
+            if (Random.Range(0, 1.0f) < encounterChance)
+            {
+                SceneChangeDataManager.Instance.EnemyData = enemyData;
+                SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
+                SceneManager.LoadScene("SampleScene");
+            }
+        }
     }
     
    
