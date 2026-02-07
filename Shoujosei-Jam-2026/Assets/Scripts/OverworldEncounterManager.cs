@@ -23,7 +23,7 @@ public class OverworldEncounterManager : MonoBehaviour
             {
                 SceneChangeDataManager.Instance.EnemyData = enemyData;
                 SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("BattleScene");
             }
         }
     }
