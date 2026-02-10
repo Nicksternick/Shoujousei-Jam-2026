@@ -7,7 +7,8 @@ public enum ProjectileType
     None = -1,
     Bullet,
     Ball,
-    Dart
+    Dart,
+    Wave
 }
 
 public class ProjectileStorage : MonoBehaviour
@@ -19,6 +20,7 @@ public class ProjectileStorage : MonoBehaviour
     private GenericPool<Bullet> bulletPool;
     private GenericPool<Ball> ballPool;
     private GenericPool<Dart> dartPool;
+    private GenericPool<Wave> wavePool;
 
     private void Awake()
     {
@@ -44,6 +46,9 @@ public class ProjectileStorage : MonoBehaviour
             case ProjectileType.Dart:
                 dartPool = new GenericPool<Dart>((Dart)projectile, defaultCapacity, poolMax);
                 break;
+            case ProjectileType.Wave:
+                wavePool = new GenericPool<Wave>((Wave)projectile, defaultCapacity, poolMax);
+                break;
         }
     }
 
@@ -57,6 +62,8 @@ public class ProjectileStorage : MonoBehaviour
                 return ballPool.GetFromPool();
             case ProjectileType.Dart:
                 return dartPool.GetFromPool();
+            case ProjectileType.Wave:
+                return wavePool.GetFromPool();
             default:
                 Debug.LogError($"{type.ToString()} does not have a projectile pool");
                 return null;
@@ -75,6 +82,9 @@ public class ProjectileStorage : MonoBehaviour
                 break;
             case ProjectileType.Dart:
                 dartPool.ReturnToPool((Dart)projectile);
+                break;
+            case ProjectileType.Wave:
+                wavePool.ReturnToPool((Wave)projectile);
                 break;
         }
     }

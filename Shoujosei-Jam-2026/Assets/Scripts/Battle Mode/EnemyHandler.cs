@@ -3,8 +3,16 @@ using UnityEngine;
 
 public class EnemyHandler : MonoBehaviour
 {
+    [SerializeField] private int health;
     [SerializeField] private AttackHandler attackHandler;
     [SerializeField] private AttackSelectionData attackSelection;
+
+    public int Health => health;
+
+    private void Start()
+    {
+        BattleManager.Instance.UpdateEnemyHealthUI(health);
+    }
 
     private void FixedUpdate()
     {
@@ -21,6 +29,12 @@ public class EnemyHandler : MonoBehaviour
                 Debug.LogAssertion("Attack is Null");
             }
         }
+    } 
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        BattleManager.Instance.UpdateEnemyHealthUI(health);
     }
 
     private AttackData GetAttack()

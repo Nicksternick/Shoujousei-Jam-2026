@@ -1,9 +1,8 @@
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class BulletLaunch : AttackPattern
 {
-    public override void UpdatePattern(Vector3 spawnPoint)
+    public override void UpdatePattern(Vector3 spawnPoint, Vector3 spawnNormal)
     {
         Vector3 direction = BattleManager.Instance.PlayerPosition - spawnPoint;
 

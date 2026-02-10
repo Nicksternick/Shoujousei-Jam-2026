@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 7f32a067f71f0f0488eb284b075e6d01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6159584107201850600
+    second: Glasscrack animationSheet_0
+  - first:
+      213: 878909612494633645
+    second: Glasscrack animationSheet_1
+  - first:
+      213: 9155450486459883809
+    second: Glasscrack animationSheet_2
+  - first:
+      213: -3429501778318773864
+    second: Glasscrack animationSheet_3
+  - first:
+      213: -8809066401536109686
+    second: Glasscrack animationSheet_4
+  - first:
+      213: -5003289203302780039
+    second: Glasscrack animationSheet_5
+  - first:
+      213: 7281067563875389923
+    second: Glasscrack animationSheet_6
+  - first:
+      213: 7107409854102672561
+    second: Glasscrack animationSheet_7
+  - first:
+      213: -1660661525857766142
+    second: Glasscrack animationSheet_8
+  - first:
+      213: -3509430569822796021
+    second: Glasscrack animationSheet_9
+  - first:
+      213: -6541871070379220684
+    second: Glasscrack animationSheet_10
+  - first:
+      213: -812285617107395912
+    second: Glasscrack animationSheet_11
+  - first:
+      213: -1976573805005923769
+    second: Glasscrack animationSheet_12
+  - first:
+      213: 7589893769012710459
+    second: Glasscrack animationSheet_13
+  - first:
+      213: -6681154198466946860
+    second: Glasscrack animationSheet_14
+  - first:
+      213: -4468701938330193506
+    second: Glasscrack animationSheet_15
+  - first:
+      213: 3836262302639920497
+    second: Glasscrack animationSheet_16
+  - first:
+      213: -6835087187446554371
+    second: Glasscrack animationSheet_17
+  - first:
+      213: 4920316714121253721
+    second: Glasscrack animationSheet_18
+  - first:
+      213: 6670499287962527853
+    second: Glasscrack animationSheet_19
+  - first:
+      213: -967648845993207302
+    second: Glasscrack animationSheet_20
+  - first:
+      213: -6884462390754769360
+    second: Glasscrack animationSheet_21
+  - first:
+      213: 6023037413157841908
+    second: Glasscrack animationSheet_22
+  - first:
+      213: 7986169404379015978
+    second: Glasscrack animationSheet_23
+  - first:
+      213: 1572808273053390538
+    second: Glasscrack animationSheet_24
+  - first:
+      213: -5528907091629386827
+    second: Glasscrack animationSheet_25
+  - first:
+      213: 1000115112957756269
+    second: Glasscrack animationSheet_26
+  - first:
+      213: -5520838206880609357
+    second: Glasscrack animationSheet_27
+  - first:
+      213: 3009704155933634287
+    second: Glasscrack animationSheet_28
+  - first:
+      213: -101271809505535702
+    second: Glasscrack animationSheet_29
+  - first:
+      213: -1772007149176779785
+    second: Glasscrack animationSheet_30
+  - first:
+      213: -4715113175201060202
+    second: Glasscrack animationSheet_31
+  - first:
+      213: -2391530331428035747
+    second: Glasscrack animationSheet_32
+  - first:
+      213: 9052973542716931065
+    second: Glasscrack animationSheet_33
+  - first:
+      213: -4390977990805456790
+    second: Glasscrack animationSheet_34
+  - first:
+      213: 6901531953161590807
+    second: Glasscrack animationSheet_35
+  - first:
+      213: -5910245615542363813
+    second: Glasscrack animationSheet_36
+  - first:
+      213: 5651794474468528602
+    second: Glasscrack animationSheet_37
+  - first:
+      213: 1615461148223674849
+    second: Glasscrack animationSheet_38
+  - first:
+      213: 8548479553574044632
+    second: Glasscrack animationSheet_39
+  - first:
+      213: 1739013804197955137
+    second: Glasscrack animationSheet_40
+  - first:
+      213: 1961505736268688163
+    second: Glasscrack animationSheet_41
+  - first:
+      213: -310391184838951427
+    second: Glasscrack animationSheet_42
+  - first:
+      213: 8657723115475465916
+    second: Glasscrack animationSheet_43
+  - first:
+      213: -8835358592028221344
+    second: Glasscrack animationSheet_44
+  - first:
+      213: -5127131759684804865
+    second: Glasscrack animationSheet_45
+  - first:
+      213: 6590244281181041337
+    second: Glasscrack animationSheet_46
+  - first:
+      213: -1261878376634732952
+    second: Glasscrack animationSheet_47
+  - first:
+      213: 4204312976467497071
+    second: Glasscrack animationSheet_48
+  - first:
+      213: -144383538601700955
+    second: Glasscrack animationSheet_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 2787
+        width: 762
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec68e15c1d3b7550800000000000000
+      internalID: 6159584107201850600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 2888
+        width: 356
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa3b6ac2a3823c00800000000000000
+      internalID: 878909612494633645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_2
+      rect:
+        serializedVersion: 2
+        x: 9628
+        y: 3041
+        width: 205
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1216e14b5b1be0f70800000000000000
+      internalID: 9155450486459883809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_3
+      rect:
+        serializedVersion: 2
+        x: 10033
+        y: 3091
+        width: 256
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8913dba8d46f760d0800000000000000
+      internalID: -3429501778318773864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_4
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2330
+        width: 509
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a839c9db7c8efb580800000000000000
+      internalID: -8809066401536109686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 2533
+        width: 508
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97337986afeb09ab0800000000000000
+      internalID: -5003289203302780039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 2736
+        width: 255
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e159626f5c8b0560800000000000000
+      internalID: 7281067563875389923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_7
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 2584
+        width: 255
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b496ea0b9792a260800000000000000
+      internalID: 7107409854102672561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_8
+      rect:
+        serializedVersion: 2
+        x: 6435
+        y: 2686
+        width: 256
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205f61b042524f8e0800000000000000
+      internalID: -1660661525857766142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_9
+      rect:
+        serializedVersion: 2
+        x: 7499
+        y: 2483
+        width: 357
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07c0d19d7ffb4fc0800000000000000
+      internalID: -3509430569822796021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_10
+      rect:
+        serializedVersion: 2
+        x: 9171
+        y: 2534
+        width: 459
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43164abfbea9635a0800000000000000
+      internalID: -6541871070379220684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_11
+      rect:
+        serializedVersion: 2
+        x: 10236
+        y: 2280
+        width: 710
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba9720f88e2ab4f0800000000000000
+      internalID: -812285617107395912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2178
+        width: 205
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a9740c89cc194e0800000000000000
+      internalID: -1976573805005923769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 2128
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c04f08b28b45960800000000000000
+      internalID: 7589893769012710459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_14
+      rect:
+        serializedVersion: 2
+        x: 6283
+        y: 2078
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d894ce97a5c743a0800000000000000
+      internalID: -6681154198466946860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_15
+      rect:
+        serializedVersion: 2
+        x: 7702
+        y: 2078
+        width: 205
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91bab6634bfbf1c0800000000000000
+      internalID: -4468701938330193506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_16
+      rect:
+        serializedVersion: 2
+        x: 9121
+        y: 2078
+        width: 306
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17513162d342d3530800000000000000
+      internalID: 3836262302639920497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_17
+      rect:
+        serializedVersion: 2
+        x: 9476
+        y: 2128
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0ac67ba64e421a0800000000000000
+      internalID: -6835087187446554371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_18
+      rect:
+        serializedVersion: 2
+        x: 10337
+        y: 2078
+        width: 408
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9535d978bf9784440800000000000000
+      internalID: 4920316714121253721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1469
+        width: 965
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68a085b2cf529c50800000000000000
+      internalID: 6670499287962527853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_20
+      rect:
+        serializedVersion: 2
+        x: 9273
+        y: 1976
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9124b50883292f0800000000000000
+      internalID: -967648845993207302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 1672
+        width: 356
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03686895ee97570a0800000000000000
+      internalID: -6884462390754769360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_22
+      rect:
+        serializedVersion: 2
+        x: 5168
+        y: 1875
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb2928ad90269350800000000000000
+      internalID: 6023037413157841908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_23
+      rect:
+        serializedVersion: 2
+        x: 8006
+        y: 1875
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2baa10c2c294de60800000000000000
+      internalID: 7986169404379015978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_24
+      rect:
+        serializedVersion: 2
+        x: 9223
+        y: 1013
+        width: 660
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6942f8accb3d510800000000000000
+      internalID: 1572808273053390538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_25
+      rect:
+        serializedVersion: 2
+        x: 10844
+        y: 1875
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3da472b406543b0800000000000000
+      internalID: -5528907091629386827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_26
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1418
+        width: 509
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63c85a756f11ed00800000000000000
+      internalID: 1000115112957756269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_27
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1114
+        width: 458
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb0a78c6ea0263b0800000000000000
+      internalID: -5520838206880609357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1114
+        width: 813
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feee075dbfd94c920800000000000000
+      internalID: 3009704155933634287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1318
+        width: 306
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2959a863d5389ef0800000000000000
+      internalID: -101271809505535702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_30
+      rect:
+        serializedVersion: 2
+        x: 6486
+        y: 1520
+        width: 154
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb8dd5e2e09867e0800000000000000
+      internalID: -1772007149176779785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_31
+      rect:
+        serializedVersion: 2
+        x: 6537
+        y: 1267
+        width: 306
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a60648c8d809eb0800000000000000
+      internalID: -4715113175201060202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_32
+      rect:
+        serializedVersion: 2
+        x: 10135
+        y: 1419
+        width: 103
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53e8ad95d39fced0800000000000000
+      internalID: -2391530331428035747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_33
+      rect:
+        serializedVersion: 2
+        x: 10287
+        y: 1368
+        width: 154
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbf6aee87f92ad70800000000000000
+      internalID: 9052973542716931065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_34
+      rect:
+        serializedVersion: 2
+        x: 10439
+        y: 1571
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a687b7128cc1013c0800000000000000
+      internalID: -4390977990805456790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_35
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 1014
+        width: 205
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718543adeba27cf50800000000000000
+      internalID: 6901531953161590807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_36
+      rect:
+        serializedVersion: 2
+        x: 6841
+        y: 1368
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59994e2de69afda0800000000000000
+      internalID: -5910245615542363813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_37
+      rect:
+        serializedVersion: 2
+        x: 7347
+        y: 1013
+        width: 205
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1563a41253f6e40800000000000000
+      internalID: 5651794474468528602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_38
+      rect:
+        serializedVersion: 2
+        x: 7499
+        y: 1368
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e91150fa554b6610800000000000000
+      internalID: 1615461148223674849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_39
+      rect:
+        serializedVersion: 2
+        x: 10185
+        y: 1013
+        width: 205
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d38878bcdc42a670800000000000000
+      internalID: 8548479553574044632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_40
+      rect:
+        serializedVersion: 2
+        x: 7145
+        y: 1267
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14648ba57d7322810800000000000000
+      internalID: 1739013804197955137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_41
+      rect:
+        serializedVersion: 2
+        x: 9983
+        y: 1267
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32baf2b131ba83b10800000000000000
+      internalID: 1961505736268688163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_42
+      rect:
+        serializedVersion: 2
+        x: 7246
+        y: 1115
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdf246acd441bbf0800000000000000
+      internalID: -310391184838951427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_43
+      rect:
+        serializedVersion: 2
+        x: 9780
+        y: 811
+        width: 205
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb67a9d8d49662870800000000000000
+      internalID: 8657723115475465916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_44
+      rect:
+        serializedVersion: 2
+        x: 10084
+        y: 1115
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06066fa1c20826580800000000000000
+      internalID: -8835358592028221344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_45
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 861
+        width: 407
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe1d5b44d4c8d8b0800000000000000
+      internalID: -5127131759684804865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_46
+      rect:
+        serializedVersion: 2
+        x: 3495
+        y: 862
+        width: 205
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b278d2d140457b50800000000000000
+      internalID: 6590244281181041337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_47
+      rect:
+        serializedVersion: 2
+        x: 6334
+        y: 861
+        width: 205
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ea0fa5d48ec7ee0800000000000000
+      internalID: -1261878376634732952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_48
+      rect:
+        serializedVersion: 2
+        x: 6942
+        y: 811
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6019ee6068b85a30800000000000000
+      internalID: 4204312976467497071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glasscrack animationSheet_49
+      rect:
+        serializedVersion: 2
+        x: 9172
+        y: 861
+        width: 205
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a15b36cfeb0ffdf0800000000000000
+      internalID: -144383538601700955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glasscrack animationSheet_0: 6159584107201850600
+      Glasscrack animationSheet_1: 878909612494633645
+      Glasscrack animationSheet_10: -6541871070379220684
+      Glasscrack animationSheet_11: -812285617107395912
+      Glasscrack animationSheet_12: -1976573805005923769
+      Glasscrack animationSheet_13: 7589893769012710459
+      Glasscrack animationSheet_14: -6681154198466946860
+      Glasscrack animationSheet_15: -4468701938330193506
+      Glasscrack animationSheet_16: 3836262302639920497
+      Glasscrack animationSheet_17: -6835087187446554371
+      Glasscrack animationSheet_18: 4920316714121253721
+      Glasscrack animationSheet_19: 6670499287962527853
+      Glasscrack animationSheet_2: 9155450486459883809
+      Glasscrack animationSheet_20: -967648845993207302
+      Glasscrack animationSheet_21: -6884462390754769360
+      Glasscrack animationSheet_22: 6023037413157841908
+      Glasscrack animationSheet_23: 7986169404379015978
+      Glasscrack animationSheet_24: 1572808273053390538
+      Glasscrack animationSheet_25: -5528907091629386827
+      Glasscrack animationSheet_26: 1000115112957756269
+      Glasscrack animationSheet_27: -5520838206880609357
+      Glasscrack animationSheet_28: 3009704155933634287
+      Glasscrack animationSheet_29: -101271809505535702
+      Glasscrack animationSheet_3: -3429501778318773864
+      Glasscrack animationSheet_30: -1772007149176779785
+      Glasscrack animationSheet_31: -4715113175201060202
+      Glasscrack animationSheet_32: -2391530331428035747
+      Glasscrack animationSheet_33: 9052973542716931065
+      Glasscrack animationSheet_34: -4390977990805456790
+      Glasscrack animationSheet_35: 6901531953161590807
+      Glasscrack animationSheet_36: -5910245615542363813
+      Glasscrack animationSheet_37: 5651794474468528602
+      Glasscrack animationSheet_38: 1615461148223674849
+      Glasscrack animationSheet_39: 8548479553574044632
+      Glasscrack animationSheet_4: -8809066401536109686
+      Glasscrack animationSheet_40: 1739013804197955137
+      Glasscrack animationSheet_41: 1961505736268688163
+      Glasscrack animationSheet_42: -310391184838951427
+      Glasscrack animationSheet_43: 8657723115475465916
+      Glasscrack animationSheet_44: -8835358592028221344
+      Glasscrack animationSheet_45: -5127131759684804865
+      Glasscrack animationSheet_46: 6590244281181041337
+      Glasscrack animationSheet_47: -1261878376634732952
+      Glasscrack animationSheet_48: 4204312976467497071
+      Glasscrack animationSheet_49: -144383538601700955
+      Glasscrack animationSheet_5: -5003289203302780039
+      Glasscrack animationSheet_6: 7281067563875389923
+      Glasscrack animationSheet_7: 7107409854102672561
+      Glasscrack animationSheet_8: -1660661525857766142
+      Glasscrack animationSheet_9: -3509430569822796021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

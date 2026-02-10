@@ -28,6 +28,45 @@ public class BattleArena : MonoBehaviour
 
     public Vector3 Center => collider.bounds.center;
 
+    public Vector3 GetNormal(ArenaPoints pointType)
+    {
+        switch (pointType)
+        {
+            case ArenaPoints.Random:
+                return Random.rotation.eulerAngles.normalized;
+
+            case ArenaPoints.Center:
+                return Random.rotation.eulerAngles.normalized;
+
+            case ArenaPoints.Left:
+                return Vector3.right;
+
+            case ArenaPoints.Right:
+                return Vector3.left;
+
+            case ArenaPoints.Top:
+                return Vector3.down;
+
+            case ArenaPoints.Bottom:
+                return Vector3.up;
+
+            case ArenaPoints.TopLeft:
+                return new Vector3(1, -1, 0).normalized;
+
+            case ArenaPoints.TopRight:
+                return new Vector3(-1, -1, 0).normalized;
+
+            case ArenaPoints.BottomLeft:
+                return new Vector3(1, 1, 0).normalized;
+
+            case ArenaPoints.BottomRight:
+                return new Vector3(-1, 1, 0);
+
+            default:
+                Debug.LogError("No Arena Point Chosen");
+                return Center;
+        }
+    }
 
     public Vector3 GetArenaPoint(ArenaPoints pointType, float offset = 0)
     {

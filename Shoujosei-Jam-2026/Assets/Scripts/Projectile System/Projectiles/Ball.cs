@@ -2,19 +2,12 @@ using UnityEngine;
 
 public class Ball : Projectile
 {
-    public float decay;
+    public int decay;
     public override ProjectileType Type => ProjectileType.Ball;
-
-    private void Start()
-    {
-        direction = Random.rotation.eulerAngles.normalized; 
-        direction.z = 0;
-    }
 
     public override Vector3 Move(Transform transform)
     {
-        if (decay <= 0) ProjectileManager.Instance.ReturnProjectileToPool(this); ;
-        decay--;
+        if (decay == 0) ProjectileManager.Instance.ReturnProjectileToPool(this); ;
 
         Vector3 position = transform.position;
 
@@ -24,6 +17,8 @@ public class Ball : Projectile
         bool clampedY;
         BattleManager.Instance.Arena.ClampToStageX(position, out clampedX);
         BattleManager.Instance.Arena.ClampToStageY(position, out clampedY);
+
+        if (clampedX || clampedY) { decay--; }
 
         direction.x *= clampedX ? -1 : 1;
         direction.y *= clampedY ? -1 : 1;

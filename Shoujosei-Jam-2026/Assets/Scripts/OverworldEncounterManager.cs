@@ -1,9 +1,6 @@
-using System.Collections.Generic;
-using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
-using static Unity.Burst.Intrinsics.X86;
 
 public class OverworldEncounterManager : MonoBehaviour
 {

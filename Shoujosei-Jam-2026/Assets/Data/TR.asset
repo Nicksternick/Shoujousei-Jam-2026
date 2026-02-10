@@ -15,10 +15,10 @@ MonoBehaviour:
   Damage: 10
   Speed: 0.1
   Pattern: {fileID: 7009354029203275654, guid: a6850ce4f4ecc8a4dbd3c11f46cacaf7, type: 3}
-  AttackPoints: 04000000
-  TriggerAtAllPoints: 1
-  MinPoints: 0
-  MaxPoints: 0
+  AttackPoints: 02000000070000000500000004000000
+  TriggerAtAllPoints: 0
+  MinPoints: 1
+  MaxPoints: 3
   Offset: 0
   AttackLength: 180
   AttackRate: 20

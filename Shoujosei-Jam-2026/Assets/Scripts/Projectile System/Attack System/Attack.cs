@@ -10,6 +10,7 @@ public class Attack : MonoBehaviour
     private AttackData attackData;
 
     private int attackCounter = 0;
+    private List<Vector3> spawnPositions = new List<Vector3>();
     private List<ArenaPoints> spawnPoints = new List<ArenaPoints>();
     private bool attacking = false;
 
@@ -23,6 +24,7 @@ public class Attack : MonoBehaviour
         pattern = data.Pattern;
         pattern.SetDamage(attackData.Damage);
         pattern.SetSpeed(attackData.Speed);
+        spawnPositions.Clear();
         spawnPoints.Clear();
         attackCounter = 0;
         attacking = true;
@@ -30,11 +32,13 @@ public class Attack : MonoBehaviour
         if (data.TriggerAtAllPoints)
         {
             spawnPoints = attackData.AttackPoints.ToList();
+            foreach (ArenaPoints point in attackData.AttackPoints)
+            {
+                spawnPositions.Add(BattleManager.Instance.Arena.GetArenaPoint(point, attackData.Offset));
+            }
         }
         else
         {
-            spawnPoints = new List<ArenaPoints>();
-
             List<ArenaPoints> controlList = attackData.AttackPoints.ToList();
             int numberToSelect = 0;
             if (attackData.MinPoints == attackData.MaxPoints)
@@ -51,15 +55,16 @@ public class Attack : MonoBehaviour
                 ArenaPoints point = controlList[Random.Range(0, controlList.Count())];
                 controlList.Remove(point);
                 spawnPoints.Add(point);
+                spawnPositions.Add(BattleManager.Instance.Arena.GetArenaPoint(point, attackData.Offset));
             }
         }
 
-        foreach (ArenaPoints point in spawnPoints)
+        foreach (Vector3 point in spawnPositions)
         {
-            ProjectileManager.Instance.SpawnHeadsUpWarning(BattleManager.Instance.Arena.GetArenaPoint(point, attackData.Offset), () => { headsUpCounter--; });
+            ProjectileManager.Instance.SpawnHeadsUpWarning(point, () => { headsUpCounter--; });
         }
 
-        headsUpCounter = spawnPoints.Count;
+        headsUpCounter = spawnPositions.Count;
     }
 
     public void UpdateAttack()
@@ -73,18 +78,20 @@ public class Attack : MonoBehaviour
         else if (attackCounter % attackData.AttackRate == 0)
         {
             pattern.TickPattern();
-            for (int i = 0; i < spawnPoints.Count; i++)
+
+            for (int i = 0; i < spawnPositions.Count; i++)
             {
-                ArenaPoints point = spawnPoints[i];
-                TickAttack(BattleManager.Instance.Arena.GetArenaPoint(point, attackData.Offset));
+                Vector3 spawnPoint = spawnPositions[i];
+                Vector3 spawnNormal = BattleManager.Instance.Arena.GetNormal(spawnPoints[i]);
+                TickAttack(spawnPoint, spawnNormal);
             }
         }
 
         attackCounter++;
     }
 
-    private void TickAttack(Vector3 spawnPosition)
+    private void TickAttack(Vector3 spawnPosition, Vector3 normal)
     {
-        pattern.UpdatePattern(spawnPosition);
+        pattern.UpdatePattern(spawnPosition, normal);
     }
 }

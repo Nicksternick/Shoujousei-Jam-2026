@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using Yarn.Unity;
 
