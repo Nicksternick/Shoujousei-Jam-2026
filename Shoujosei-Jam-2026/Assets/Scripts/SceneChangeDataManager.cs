@@ -5,6 +5,7 @@ public class SceneChangeDataManager
     private static SceneChangeDataManager instance;
     private EnemyData enemyData;
     private Vector3 overWorldPlayerPosition;
+    private bool miniBossCompelete = false;
 
     public SceneChangeDataManager()
     {
@@ -35,15 +36,9 @@ public class SceneChangeDataManager
         set { overWorldPlayerPosition = value; }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool MiniBossComplete
     {
-        //DontDestroyOnLoad(instance);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        get { return miniBossCompelete; }
+        set {  miniBossCompelete = value; }
     }
 }

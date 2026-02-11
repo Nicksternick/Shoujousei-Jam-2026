@@ -28,7 +28,17 @@ public class MiniBossDialogue : MonoBehaviour
     {
         SceneChangeDataManager.Instance.EnemyData = enemyData;
         SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
+        SceneChangeDataManager.Instance.MiniBossComplete = true;
         Debug.Log("Starting mini boss fight");
-        //SceneManager.LoadScene("BattleScene");
+        //SceneManager.LoadScene("SampleScene");
+    }
+
+    private void Start()
+    {
+        //if player is coming back to this scene from the mini boss fight hide the object
+        if (SceneChangeDataManager.Instance.MiniBossComplete)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
