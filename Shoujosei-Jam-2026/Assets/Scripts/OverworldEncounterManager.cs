@@ -8,8 +8,6 @@ using static Unity.Burst.Intrinsics.X86;
 public class OverworldEncounterManager : MonoBehaviour
 {
     [SerializeField]
-    private Tilemap collisionMap;
-    [SerializeField]
     private float encounterChance;
     [SerializeField]
     private EnemyData enemyData;
@@ -23,7 +21,8 @@ public class OverworldEncounterManager : MonoBehaviour
             {
                 SceneChangeDataManager.Instance.EnemyData = enemyData;
                 SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
-                SceneManager.LoadScene("BattleScene");
+                Debug.Log("Encounter");
+                //SceneManager.LoadScene("BattleScene");
             }
         }
     }
@@ -32,11 +31,7 @@ public class OverworldEncounterManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(!collisionMap)
-        {
-            collisionMap = GetComponent<Tilemap>();
-        }
-        collisionMap.color = new Color(0,0,0,0);
+        GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
     }
 
     // Update is called once per frame
