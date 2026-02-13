@@ -1,11 +1,13 @@
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
 
 public class OverworldPlayerController : MonoBehaviour
 {
     private Vector3 direction;
     private Vector3 refVel;
+    private bool inDialogue = true; // set to true by default for intro dialogue
 
     [SerializeField] private float speed;
     [SerializeField] private float dampValue;
@@ -41,9 +43,18 @@ public class OverworldPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 position = transform.position;
-        Vector3 velocity = direction * speed * Time.deltaTime;
-        position += velocity;
-        transform.position = position;
+        if (!inDialogue)
+        {
+            Vector3 position = transform.position;
+            Vector3 velocity = direction * speed * Time.deltaTime;
+            position += velocity;
+            transform.position = position;
+        }
+    }
+
+    [YarnCommand("EndIntroDialogue")]
+    public void OnDialogueEnd()
+    {
+        inDialogue = false;
     }
 }

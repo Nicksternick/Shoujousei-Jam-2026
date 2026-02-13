@@ -1,0 +1,13 @@
+﻿title: Intro
+---
+The Kingdom of Maldevia is trapped in the shadow of its past. <br>A land once controlled by the richest in the continent. <br>Violent political reform led to all of the landowners fleeing to other countries, abandoning their lavish castles. 
+Decades of war left these castles to wither; over 200 years, dense vegetation quickly encroached upon the castles, covering all points of entry with thick walls of thorns.
+Many have tried to find ways to enter these castles-- government officials, researchers, vagrants, thieves-- but no expeditions have been fruitful.
+Rumors have sprouted that the thick ivy choking the castle Dellmorte for 200 years withered overnight. Many have gone to investigate the insides of the castle, but few have come back.
+Those who have suffer from delirium, with a fixation on pink spider webs; all cases claim that the dead have come back to haunt them for their sins.
+Enter…The Biologist <b>Emilia Ettore.</b>”
+<<StartFade IntroMask>>
+
+Emilia: “My…what disarray. to think these used to be the pride of our country… No matter. If I can understand the source of these webs…then it’ll all be worth it.
+<<EndIntroDialogue OverworldPlayer>>
+===
