@@ -4,6 +4,10 @@ public class BossDoor : Interactable
 {
     [SerializeField]
     private GameObject bossRoomMask;
+    [SerializeField]
+    private GameObject doorcollider;
+    [SerializeField]
+    private Sprite openSprite; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +25,7 @@ public class BossDoor : Interactable
     public override void OnInteract(OverworldPlayerController player)
     {
         bossRoomMask.SetActive(false);
-        gameObject.SetActive(false);
+        GetComponent<SpriteRenderer>().sprite = openSprite;
+        doorcollider.SetActive(false);
     }
 }

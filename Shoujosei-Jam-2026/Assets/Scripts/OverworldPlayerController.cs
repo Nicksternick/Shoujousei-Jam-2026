@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
 
 public class OverworldPlayerController : MonoBehaviour
 {
     private Vector3 direction;
     private Vector3 refVel;
+    private bool inDialogue = true; // set to true by default for intro dialogue
 
     [SerializeField] private float speed;
     [SerializeField] private float dampValue;
+    [SerializeField] private Animator animController;
 
     private Interactable interactable;
     public Interactable Interactable 
@@ -40,9 +43,34 @@ public class OverworldPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 position = transform.position;
-        Vector3 velocity = direction * speed * Time.deltaTime;
-        position += velocity;
-        transform.position = position;
+        if (!inDialogue)
+        {
+            Vector3 position = transform.position;
+            Vector3 velocity = direction * speed * Time.deltaTime;
+            position += velocity;
+            transform.position = position;
+
+            if(direction.x > 0 || direction.y > 0)
+            {
+                animController.SetFloat("Direction", 1);
+                animController.SetFloat("Mag", 1);
+            }
+            else if(direction.x < 0 || direction.y < 0)
+            {
+                animController.SetFloat("Direction", -1);
+                animController.SetFloat("Mag", 1);
+            }
+            else
+            {
+                animController.SetFloat("Direction", 0);
+                animController.SetFloat("Mag", 0);
+            }
+        }
+    }
+
+    [YarnCommand("EndIntroDialogue")]
+    public void OnDialogueEnd()
+    {
+        inDialogue = false;
     }
 }
