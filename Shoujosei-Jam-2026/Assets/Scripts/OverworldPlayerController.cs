@@ -49,6 +49,7 @@ public class OverworldPlayerController : MonoBehaviour
             Vector3 velocity = direction * speed * Time.deltaTime;
             position += velocity;
             transform.position = position;
+            Debug.Log(direction.x);
 
             if(direction.x > 0 || direction.y > 0)
             {
@@ -69,8 +70,20 @@ public class OverworldPlayerController : MonoBehaviour
     }
 
     [YarnCommand("EndIntroDialogue")]
+    public void EndIntroDialogue()
+    {
+        OnDialogueEnd();
+    }
+
     public void OnDialogueEnd()
     {
         inDialogue = false;
+    }
+
+    public void OnDialogueStart() 
+    {
+        inDialogue = true;
+        animController.SetFloat("Direction", 0);
+        animController.SetFloat("Mag", 0);
     }
 }

@@ -4,9 +4,9 @@ using Yarn.Unity;
 public class MonologueTrigger : MonoBehaviour
 {
     [SerializeField]
-    private DialogueRunner dialogueRunner;
+    protected DialogueRunner dialogueRunner;
     [SerializeField]
-    private string nodeName;
+    protected string nodeName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,13 +18,18 @@ public class MonologueTrigger : MonoBehaviour
         GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
         var player = other.gameObject.GetComponent<OverworldPlayerController>();
         if (player)
         {
             if (!dialogueRunner.IsDialogueRunning)
-               dialogueRunner.StartDialogue(nodeName);
+            {
+                dialogueRunner.StartDialogue(nodeName);
+                player.OnDialogueStart();
+            }
+              
+
         }
     }
 }
