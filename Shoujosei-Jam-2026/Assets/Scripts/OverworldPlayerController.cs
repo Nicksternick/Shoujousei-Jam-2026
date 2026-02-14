@@ -11,6 +11,7 @@ public class OverworldPlayerController : MonoBehaviour
 
     [SerializeField] private float speed;
     [SerializeField] private float dampValue;
+    [SerializeField] private Animator animController;
 
     private Interactable interactable;
     public Interactable Interactable 
@@ -49,6 +50,22 @@ public class OverworldPlayerController : MonoBehaviour
             Vector3 velocity = direction * speed * Time.deltaTime;
             position += velocity;
             transform.position = position;
+
+            if(direction.x > 0 || direction.y > 0)
+            {
+                animController.SetFloat("Direction", 1);
+                animController.SetFloat("Mag", 1);
+            }
+            else if(direction.x < 0 || direction.y < 0)
+            {
+                animController.SetFloat("Direction", -1);
+                animController.SetFloat("Mag", 1);
+            }
+            else
+            {
+                animController.SetFloat("Direction", 0);
+                animController.SetFloat("Mag", 0);
+            }
         }
     }
 
