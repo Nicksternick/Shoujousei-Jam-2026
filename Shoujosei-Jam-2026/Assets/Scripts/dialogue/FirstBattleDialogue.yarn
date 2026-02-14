@@ -1,0 +1,10 @@
+﻿title: FirstBattleDialogue
+---
+Emilia: A Widow outside the caves in Konztanza... It's been five years since I've been this close to one.
+Widow: <b>SNARL</b>
+Emilia: Disturbing the peace in this beautiful castle... How nauseating.
+Widow: <b>HISSS</b>
+Emilia: I don't mind playing exterminator today.
+Dodge the enemies attack and fight back by charging up each rose
+<<StartBattle *Nick Add The Name Of The Game Object That Starts The Fight>>
+===

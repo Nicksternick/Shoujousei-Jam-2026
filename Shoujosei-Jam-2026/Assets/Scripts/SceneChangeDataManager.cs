@@ -5,9 +5,11 @@ public class SceneChangeDataManager
     private static SceneChangeDataManager instance;
     private EnemyData enemyData;
     private Vector3 overWorldPlayerPosition;
+    private bool firstEncounterComplete;
     private bool miniBossCompelete = false;
     private bool finalBossCompelete = false;
     private bool introComplete = false;
+    private int previousEncounterTriggerID;
 
     public SceneChangeDataManager()
     {
@@ -55,4 +57,17 @@ public class SceneChangeDataManager
         get { return finalBossCompelete; }
         set { finalBossCompelete = value; }
     }
+
+    public bool FirstEncounterComplete
+    {
+        get { return firstEncounterComplete; }
+        set { firstEncounterComplete = value; }
+    }
+
+    public int PreviousEncounterTrigger
+    {
+        get { return previousEncounterTriggerID; }
+        set { previousEncounterTriggerID = value; }
+    }
+
 }

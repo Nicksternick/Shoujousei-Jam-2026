@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Yarn.Unity;
@@ -14,6 +15,7 @@ public class OverworldPlayerController : MonoBehaviour
     [SerializeField] private IntroMaskController fadeSprite;
     [SerializeField] private DialogueRunner dialogueRunner;
 
+    private bool firstEncounterDialogueCompelete;
     private Interactable interactable;
     public Interactable Interactable 
     { 
@@ -52,6 +54,12 @@ public class OverworldPlayerController : MonoBehaviour
         else
         {
             fadeSprite.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        }
+
+        if (SceneChangeDataManager.Instance.FirstEncounterComplete && !firstEncounterDialogueCompelete)
+        {
+            dialogueRunner.StartDialogue("PostFirstEncounter");
+            inDialogue = true;
         }
     }
 
@@ -94,6 +102,7 @@ public class OverworldPlayerController : MonoBehaviour
         SceneChangeDataManager.Instance.IntroComplete = true;
     }
 
+    [YarnCommand("EndFirstEncounterDialogue")]
     public void OnDialogueEnd()
     {
         inDialogue = false;
