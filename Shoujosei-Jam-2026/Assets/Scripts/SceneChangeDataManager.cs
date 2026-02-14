@@ -6,6 +6,8 @@ public class SceneChangeDataManager
     private EnemyData enemyData;
     private Vector3 overWorldPlayerPosition;
     private bool miniBossCompelete = false;
+    private bool finalBossCompelete = false;
+    private bool introComplete = false;
 
     public SceneChangeDataManager()
     {
@@ -40,5 +42,17 @@ public class SceneChangeDataManager
     {
         get { return miniBossCompelete; }
         set {  miniBossCompelete = value; }
+    }
+
+    public bool IntroComplete
+    {
+        get { return introComplete; }
+        set { introComplete = value; }
+    }
+
+    public bool FinalBossComplete
+    {
+        get { return finalBossCompelete; }
+        set { finalBossCompelete = value; }
     }
 }

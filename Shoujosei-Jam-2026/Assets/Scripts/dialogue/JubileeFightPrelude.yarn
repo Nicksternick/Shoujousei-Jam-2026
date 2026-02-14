@@ -1,0 +1,15 @@
+﻿title: JubileeFightPrelude
+---
+<i>A Widow falls from the ceiling and wraps itself around Emilia’s head.</i>
+All of Emilia’s senses fade away quickly.
+Her heart beats rapidly.
+Complete nothingness…
+...
+...
+...
+<i>The sound of shucking a clam echoes in her brain.</i>
+<<ReturnFromFade JubileeFightTrigger>>
+<i>All of her senses return, and in front of her stands the strange woman.</i>
+<<EndIntroDialogue OverworldPlayer>>
+
+===

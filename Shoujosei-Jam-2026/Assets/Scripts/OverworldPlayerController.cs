@@ -11,6 +11,8 @@ public class OverworldPlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float dampValue;
     [SerializeField] private Animator animController;
+    [SerializeField] private IntroMaskController fadeSprite;
+    [SerializeField] private DialogueRunner dialogueRunner;
 
     private Interactable interactable;
     public Interactable Interactable 
@@ -18,6 +20,10 @@ public class OverworldPlayerController : MonoBehaviour
         set { interactable = value; } 
     }
 
+    public IntroMaskController FadeSprite
+    {
+        get { return fadeSprite; }
+    }
 
     public void OnMove (InputAction.CallbackContext context)
     {
@@ -37,6 +43,15 @@ public class OverworldPlayerController : MonoBehaviour
         if(SceneChangeDataManager.Instance.OverWorldPlayerPosition != Vector3.zero)
         {
             transform.position = SceneChangeDataManager.Instance.OverWorldPlayerPosition;
+        }
+
+        if (!SceneChangeDataManager.Instance.IntroComplete)
+        {
+            dialogueRunner.StartDialogue("Intro");
+        }
+        else
+        {
+            fadeSprite.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
     }
 
@@ -73,6 +88,11 @@ public class OverworldPlayerController : MonoBehaviour
     {
         OnDialogueEnd();
     }
+    [YarnCommand("FirstIntro")]
+    public void FixedUpdate()
+    {
+        SceneChangeDataManager.Instance.IntroComplete = true;
+    }
 
     public void OnDialogueEnd()
     {
@@ -82,7 +102,9 @@ public class OverworldPlayerController : MonoBehaviour
     public void OnDialogueStart() 
     {
         inDialogue = true;
+        direction = Vector3.zero;
         animController.SetFloat("Direction", 0);
         animController.SetFloat("Mag", 0);
     }
+
 }

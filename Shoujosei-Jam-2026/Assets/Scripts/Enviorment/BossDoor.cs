@@ -13,7 +13,8 @@ public class BossDoor : Interactable
     void Start()
     {
         //mask is hidden by default so boss room is visible in editor
-        bossRoomMask.SetActive(true);
+        if(!SceneChangeDataManager.Instance.FinalBossComplete)
+            bossRoomMask.SetActive(true);
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class BossDoor : Interactable
     {
         bossRoomMask.SetActive(false);
         GetComponent<SpriteRenderer>().sprite = openSprite;
+        interactText.SetActive(false);
         doorcollider.SetActive(false);
     }
 }
