@@ -62,8 +62,8 @@ public class MiniBossDialogue : MonoBehaviour
         if (jubileeExit)
         {
             jubilee.transform.position = new Vector3(jubilee.transform.position.x, jubilee.transform.position.y + (speed * Time.deltaTime), jubilee.transform.position.z);
-            jubilee.GetComponent<Animator>().SetFloat("Walk", 0);
-            if(jubilee.transform.position.y <= 34.5)
+            jubilee.GetComponent<Animator>().SetFloat("Walk", 1);
+            if(jubilee.transform.position.y >= 34.5)
             {
                 jubilee.SetActive(false);
                 player.OnDialogueEnd();

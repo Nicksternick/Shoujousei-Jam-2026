@@ -24,7 +24,7 @@ public abstract class Interactable : MonoBehaviour
         if (player)
         {
             player.Interactable = null;
-            interactText.SetActive(false);
+            //interactText.SetActive(false);
         }
     }
 
