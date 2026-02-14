@@ -1,9 +1,17 @@
 using UnityEngine;
 
+public enum EnemyType
+{
+    Basic,
+    MiniBoss,
+    FinalBoss
+
+}
+
 [CreateAssetMenu(fileName = "EnemyData", menuName = "ScriptableObjects/EnemyData")]
 public class EnemyData : ScriptableObject
 {
-    int health;
-    Sprite enemySprite;
-    AttackSelection attackPool;
+    public int health;
+    public EnemyType enemySprite;
+    public AttackSelectionData attackPool;
 }

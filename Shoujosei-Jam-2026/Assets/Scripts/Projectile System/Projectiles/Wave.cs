@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class Wave : Projectile
 {
-    [SerializeField] private float waveTurnAmplitudeDegPerSec = 180f; // max turn rate
-    [SerializeField] private float waveFrequencyHz = 1.5f;            // cycles per second
-    [SerializeField] private float wavePhase = 0f;                    // radians
-    private float startTime;
+    public float waveTurnAmplitudeDegPerSec = 180f; // max turn rate
+    public float waveFrequencyHz = 1.5f;            // cycles per second
+    public float wavePhase = 0f;                    // radians
+    private float startTime = 0;
 
     public float StartTime
     {

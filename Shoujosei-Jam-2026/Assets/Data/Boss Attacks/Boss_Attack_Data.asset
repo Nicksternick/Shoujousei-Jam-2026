@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29591887e2f02ba44bd2a7a5411f42a4, type: 3}
+  m_Name: Boss_Attack_Data
+  m_EditorClassIdentifier: Assembly-CSharp::AttackSelectionData
+  AttackSelection:
+  - AttackData: {fileID: 11400000, guid: 0ffa4c402eb50574b8ec2e736f1fb7d7, type: 2}
+    ActivationWeight: 20
+  - AttackData: {fileID: 11400000, guid: de57d9eb596d5fd4a935a70bd69727d6, type: 2}
+    ActivationWeight: 10
+  - AttackData: {fileID: 11400000, guid: ed2d4937efb731a4bae9819bfde177d1, type: 2}
+    ActivationWeight: 20
+  - AttackData: {fileID: 11400000, guid: 2658fa9492921dc4b9109969923c0536, type: 2}
+    ActivationWeight: 30
+  - AttackData: {fileID: 11400000, guid: 7e8e889fc32201547812d21fa35ddccd, type: 2}
+    ActivationWeight: 40

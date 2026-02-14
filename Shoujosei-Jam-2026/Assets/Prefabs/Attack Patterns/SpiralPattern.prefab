@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc84a26b60ba2340950dc124bcc9d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpiralPattern
-  numberOfBullets: 10
-  turnFactor: 0.5
+  numberOfBullets: 20
+  turnFactor: 0

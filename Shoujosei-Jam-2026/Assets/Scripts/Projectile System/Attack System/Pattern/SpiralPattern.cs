@@ -10,21 +10,18 @@ public class SpiralPattern : AttackPattern
         // Degrees between each bullet
         float step = 360f / numberOfBullets;
 
-        for (int i = 0; i < numberOfBullets; i++)
-        {
-            float angleDeg = (step * i);
-            float angleRad = angleDeg * Mathf.Deg2Rad;
+        float angleDeg = (step * (time % numberOfBullets));
+        float angleRad = angleDeg * Mathf.Deg2Rad;
 
-            Vector3 direction = new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad), 0f);
+        Vector3 direction = new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad), 0f);
 
-            Bullet projectile = ProjectileManager.Instance.GetProjectileFromPool(ProjectileType.Bullet) as Bullet;
+        Bullet projectile = ProjectileManager.Instance.GetProjectileFromPool(ProjectileType.Bullet) as Bullet;
 
-            projectile.damage = damage;
-            projectile.speed = speed;
-            projectile.direction = direction.normalized;
-            projectile.turnFactor = turnFactor;
+        projectile.damage = damage;
+        projectile.speed = speed;
+        projectile.direction = direction.normalized;
+        projectile.turnFactor = turnFactor;
 
-            projectile.transform.position = spawnPoint;
-        }
+        projectile.transform.position = spawnPoint;
     }
 }

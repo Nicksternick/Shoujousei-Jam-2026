@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29591887e2f02ba44bd2a7a5411f42a4, type: 3}
+  m_Name: Easy_Attack_Data
+  m_EditorClassIdentifier: Assembly-CSharp::AttackSelectionData
+  AttackSelection:
+  - AttackData: {fileID: 11400000, guid: cfceff1ce5fd4f940999cfac3708f27e, type: 2}
+    ActivationWeight: 20
+  - AttackData: {fileID: 11400000, guid: 8f8433d6aea02f748b008d9ff8930796, type: 2}
+    ActivationWeight: 20
+  - AttackData: {fileID: 11400000, guid: a8d3101c2baf2054c9823c92e9a4746c, type: 2}
+    ActivationWeight: 20
+  - AttackData: {fileID: 11400000, guid: f828567a1c5a0054994c8f7c0f49dec9, type: 2}
+    ActivationWeight: 20

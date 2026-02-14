@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: AttackSelection
   m_EditorClassIdentifier: Assembly-CSharp::AttackSelectionData
   AttackSelection:
-  - AttackData: {fileID: 11400000, guid: c4e2d853614b1cf4d95080bd6c4ba108, type: 2}
-    ActivationWeight: 20
-  - AttackData: {fileID: 11400000, guid: 5792b519f17aba54fb68d1c06e118958, type: 2}
-    ActivationWeight: 20
-  - AttackData: {fileID: 11400000, guid: 9d1c4e09ee739dc43b327c7d278bfef3, type: 2}
-    ActivationWeight: 20
-  - AttackData: {fileID: 11400000, guid: bd41a990a4a389a4e81f1bae4025f013, type: 2}
+  - AttackData: {fileID: 11400000, guid: de57d9eb596d5fd4a935a70bd69727d6, type: 2}
     ActivationWeight: 20

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c97f7b200f6544eb4e4e9b399834fd, type: 3}
+  m_Name: MB_Wall
+  m_EditorClassIdentifier: Assembly-CSharp::AttackData
+  Damage: 15
+  Speed: 0.1
+  Pattern: {fileID: 7055537731851959124, guid: 005cb4b08063cf44a970d082890186a0, type: 3}
+  AttackPoints: 03000000060000000800000009000000
+  TriggerAtAllPoints: 0
+  MinPoints: 2
+  MaxPoints: 2
+  Offset: 0
+  AttackLength: 20
+  AttackRate: 20

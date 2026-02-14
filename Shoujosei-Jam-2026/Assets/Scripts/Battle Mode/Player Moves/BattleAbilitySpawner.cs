@@ -14,6 +14,7 @@ public class BattleAbilitySpawner : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!BattleManager.Instance.BattleStarted) return;
         if (cooldownTimer > 0 && activeAbilities.Count == 0)
         {
             cooldownTimer -= 1;

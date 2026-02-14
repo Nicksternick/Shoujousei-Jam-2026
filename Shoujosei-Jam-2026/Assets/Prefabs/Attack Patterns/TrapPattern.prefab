@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4066577643609530262}
-  - component: {fileID: 8861018287453046818}
+  - component: {fileID: -7513423332804990857}
   m_Layer: 0
-  m_Name: RainPattern
+  m_Name: TrapPattern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8861018287453046818
+--- !u!114 &-7513423332804990857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,6 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3953855940822994039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4b076b78108f74599613e10195f2f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ba772f09594ce5428e849aff2a876fe, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RainPattern
+  m_EditorClassIdentifier: Assembly-CSharp::TrapPattern
+  numberOfBullets: 8
+  turnFactor: 0
+  delayCount: 30
+  offset: 7

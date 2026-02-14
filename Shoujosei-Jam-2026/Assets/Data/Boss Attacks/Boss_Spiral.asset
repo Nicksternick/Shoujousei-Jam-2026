@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c97f7b200f6544eb4e4e9b399834fd, type: 3}
+  m_Name: Boss_Spiral
+  m_EditorClassIdentifier: Assembly-CSharp::AttackData
+  Damage: 15
+  Speed: 0.12
+  Pattern: {fileID: -1502654511876391523, guid: e135bb2f0a32cfc4cb3f4ccd67d45b0d, type: 3}
+  AttackPoints: 01000000
+  TriggerAtAllPoints: 1
+  MinPoints: 0
+  MaxPoints: 0
+  Offset: 0
+  AttackLength: 240
+  AttackRate: 15

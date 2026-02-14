@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class RainPattern : AttackPattern
 {
+    public float waveTurnAmplitudeDegPerSec = 180f; // max turn rate
+    public float waveFrequencyHz = 1.5f;            // cycles per second
+    public float wavePhase = 0f;                    // radians
     public override void UpdatePattern(Vector3 spawnPoint, Vector3 spawnNormal)
     {
         Wave projectile = ProjectileManager.Instance.GetProjectileFromPool(ProjectileType.Wave) as Wave;
@@ -9,6 +12,10 @@ public class RainPattern : AttackPattern
         projectile.damage = damage;
         projectile.speed = speed;
         projectile.direction = spawnNormal;
+
+        projectile.waveFrequencyHz = waveFrequencyHz;
+        projectile.wavePhase = wavePhase;
+        projectile.waveTurnAmplitudeDegPerSec = waveTurnAmplitudeDegPerSec;
 
         projectile.transform.position = spawnPoint;
     }

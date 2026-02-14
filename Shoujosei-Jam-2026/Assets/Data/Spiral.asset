@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Spiral
   m_EditorClassIdentifier: Assembly-CSharp::AttackData
   Damage: 10
-  Speed: 0.1
+  Speed: 0.05
   Pattern: {fileID: -1502654511876391523, guid: 60cd9e7be23bd9041ab34c8b43d51b55, type: 3}
-  AttackPoints: 0000000000000000
+  AttackPoints: 01000000
   TriggerAtAllPoints: 1
   MinPoints: 0
   MaxPoints: 0
   Offset: 0
   AttackLength: 240
-  AttackRate: 30
+  AttackRate: 8

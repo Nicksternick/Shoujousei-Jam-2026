@@ -6,16 +6,20 @@ public class EnemyHandler : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private AttackHandler attackHandler;
     [SerializeField] private AttackSelectionData attackSelection;
+    [SerializeField] private bool enemyActive = false;
 
     public int Health => health;
 
-    private void Start()
+    public void SetupEnemy(EnemyData enemyData)
     {
-        BattleManager.Instance.UpdateEnemyHealthUI(health);
+        health = enemyData.health;
+        attackSelection = enemyData.attackPool;
+        enemyActive = true;
     }
 
     private void FixedUpdate()
     {
+        if (!enemyActive) return;
         if (!attackHandler.AttackInProgress)
         {
             AttackData attack = GetAttack();
