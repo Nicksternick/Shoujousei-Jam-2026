@@ -3,7 +3,9 @@ using Yarn.Unity;
 public class JubileeGlimpseTrigger : MonologueTrigger
 {
     [SerializeField]
-    public GameObject jubileeSprite;
+    private GameObject jubileeSprite;
+    [SerializeField]
+    private Animator jubileeAnim;
     private bool SpriteMoving;
     private int direction = 0;
     [SerializeField]
@@ -12,7 +14,10 @@ public class JubileeGlimpseTrigger : MonologueTrigger
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       if(jubileeAnim == null)
+        {
+            jubileeAnim = jubileeSprite.GetComponent<Animator>();   
+        } 
     }
 
     // Update is called once per frame
@@ -28,6 +33,7 @@ public class JubileeGlimpseTrigger : MonologueTrigger
                 {
                     dialogueRunner.StartDialogue(nodeName);
                     direction = 0;
+                    jubileeAnim.SetFloat("Walk", 0);
                 }
             }
             //end of encounter
@@ -51,6 +57,7 @@ public class JubileeGlimpseTrigger : MonologueTrigger
             player.OnDialogueStart();
             SpriteMoving = true;
             direction = -1;
+            jubileeAnim.SetFloat("Walk", 1);
         }
     }
 
@@ -58,5 +65,6 @@ public class JubileeGlimpseTrigger : MonologueTrigger
     public void StartJubileeExit()
     {
         direction = 1;
+        jubileeAnim.SetFloat("Walk", 1);
     }
 }

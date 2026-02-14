@@ -49,7 +49,6 @@ public class OverworldPlayerController : MonoBehaviour
             Vector3 velocity = direction * speed * Time.deltaTime;
             position += velocity;
             transform.position = position;
-            Debug.Log(direction.x);
 
             if(direction.x > 0 || direction.y > 0)
             {
