@@ -12,10 +12,8 @@ public class OverworldEncounterManager : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(SceneChangeDataManager.Instance.PreviousEncounterTrigger != InstanceID)
-        {
-            if (SceneChangeDataManager.Instance.PreviousEncounterTrigger != GetInstanceID())
-            {
+       if(SceneChangeDataManager.Instance.PreviousEncounterTrigger != gameObject.name)
+       {
                 var player = collision.GetComponent<OverworldPlayerController>();
                 if (player != null)
                 {
@@ -24,11 +22,10 @@ public class OverworldEncounterManager : MonoBehaviour
                         SceneChangeDataManager.Instance.EnemyData = enemyData;
                         SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
                         SceneChangeDataManager.Instance.FirstEncounterComplete = true;
-                        SceneChangeDataManager.Instance.PreviousEncounterTrigger = InstanceID;
+                        SceneChangeDataManager.Instance.PreviousEncounterTrigger = gameObject.name;
                         SceneManager.LoadScene("SampleScene");
                     }
                 }
-            }
         }
     }
     
@@ -39,7 +36,7 @@ public class OverworldEncounterManager : MonoBehaviour
         GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
         if(InstanceID == 0)
         {
-            InstanceID = GetInstanceID();
+            InstanceID = gameObject.GetInstanceID();
         }
         //if(SceneChangeDataManager.Instance.PreviousEncounterTrigger != null)
             //SceneChangeDataManager.Instance.PreviousEncounterTrigger.GetComponent<BoxCollider2D>().enabled = false;

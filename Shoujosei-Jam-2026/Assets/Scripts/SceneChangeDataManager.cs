@@ -9,7 +9,7 @@ public class SceneChangeDataManager
     private bool miniBossCompelete = false;
     private bool finalBossCompelete = false;
     private bool introComplete = false;
-    private int previousEncounterTriggerID;
+    private string previousEncounterTriggerID;
 
     public SceneChangeDataManager()
     {
@@ -64,7 +64,7 @@ public class SceneChangeDataManager
         set { firstEncounterComplete = value; }
     }
 
-    public int PreviousEncounterTrigger
+    public string PreviousEncounterTrigger
     {
         get { return previousEncounterTriggerID; }
         set { previousEncounterTriggerID = value; }
