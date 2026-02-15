@@ -1,17 +1,23 @@
 ﻿title: PreFinalBoss
 ---
+<<ShowEmily TalkSpriteController>>
 Emilia: You must be the queen of this brood.
+<<ShowQueen TalkSpriteController>>
 Widow Queen: Why hello to you too deary~
 Widow Queen: I’d say make yourself at home but…
 Widow Queen: It looks like you’ve already done that. Was it fun killing my children?
+<<ShowEmily TalkSpriteController>>
 Emilia: I could ask the same for you. How many people have died here? Most of this brood has already taken on a human form. So I have to assume you’ve been well fed.
+<<ShowQueen TalkSpriteController>>
 Widow Queen: What’s wrong with a mother providing the best for her children? 
 Widow Queen: You know, I have only you to thank for introducing me to prey this plentiful and gullible. Us Widows had to find a new home after that cave-in! If I eat enough I can ensure that my brood will last forever.
 Widow Queen: Everyone kills to eat. Who are you to deny us that?
+<<ShowEmily TalkSpriteController>>
 Emilia: ...I’m not. I honestly don’t care what you do.
 Emilia: Like you said… killing to eat is the natural order of things. I’d never get in the way of that.
 Emilia: However 
 Emilia: You’ve taken someone from me…and used her own face to mock me. This… is personal now.
+<<ShowQueen TalkSpriteController>>
 Widow Queen: Hmm~ Fair enough dear…
 Widow Queen: If that’s the case then I’ll make you repent for the children I’ve lost. Your body will become food for the next generation! Isn’t that wonderful?~ Hehehe!
 <<BeginFinalBattle FinalBoss>>

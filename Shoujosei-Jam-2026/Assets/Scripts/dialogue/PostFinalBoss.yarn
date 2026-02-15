@@ -1,10 +1,14 @@
 ﻿title: PostFinalBoss
 ---
+<<ShowQueen TalkSpriteController>>
 Widow Queen: Ugh! You bitch…
+<<ShowEmily TalkSpriteController>>
 Emilia: This is the end for your brood Widow. Any last words you’d like me to relay?
+<<ShowQueen TalkSpriteController>>
 Widow Queen: Heeheehee~ This may be my end, but a good mother always protects her children.
 Widow Queen: The next Queen was chosen before you came here… and I’m sure she’s already made her escape. With how human she looks… she’ll blend in easily…
 Widow Queen: And the Widows… will live on… Heehee…
+<<ShowEmily TalkSpriteController>>
 Emilia: She couldn’t mean…
 Emilia: NO!
 <<PostBossFadeOut FinalBoss>>

@@ -1,8 +1,11 @@
 ﻿title: JubileeGlimpseScript
 ---
 <i>A strange character walks in from above. She looks like a girl in gothic clothing and pigtails</i>
+<<ShowEmily TalkSpriteController>>
 Emilia: ...
+<<ShowJubilee TalkSpriteController>>
 Strange Girl: <i>He he he</i>
 <<JubileeExit JubileeGlimpseTrigger>>
+<<ShowEmily TalkSpriteController>>
 Emilia: A hallucination...?
 ===

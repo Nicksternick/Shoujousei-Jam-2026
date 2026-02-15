@@ -9,6 +9,7 @@ Those who have suffer from delirium, with a fixation on pink spider webs; all ca
 Enter…The Biologist <b>Emilia Ettore.</b>”
 <<StartFade IntroMask>>
 
+<<ShowEmily TalkSpriteController>>
 Emilia: “My…what disarray. to think these used to be the pride of our country… No matter. If I can understand the source of these webs…then it’ll all be worth it.
 <<EndIntroDialogue OverworldPlayer>>
 ===
