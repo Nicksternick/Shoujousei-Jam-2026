@@ -10,6 +10,8 @@ public class IntroMaskController : MonoBehaviour
     [Range(0, 1)]
     private float speed;
 
+    [SerializeField] private SpriteRenderer castle;
+
     public bool FadingFromBlack
     {
         get { return fadingFromBlack; }
@@ -54,6 +56,7 @@ public class IntroMaskController : MonoBehaviour
     [YarnCommand("StartFade")]
     public void FadeFromBlack()
     {
+        castle.gameObject.SetActive(false);
         fadingFromBlack = true;
     }
 

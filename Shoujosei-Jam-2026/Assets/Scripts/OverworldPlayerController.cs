@@ -15,6 +15,8 @@ public class OverworldPlayerController : MonoBehaviour
     [SerializeField] private IntroMaskController fadeSprite;
     [SerializeField] private DialogueRunner dialogueRunner;
 
+    [SerializeField] private SpriteRenderer castle;
+
     private SpriteRenderer playerSprite;
 
     private static bool firstEncounterDialogueCompelete;
@@ -109,9 +111,11 @@ public class OverworldPlayerController : MonoBehaviour
     {
         OnDialogueEnd();
     }
+    
     [YarnCommand("FirstIntro")]
-    public void FixedUpdate()
+    public void FirstIntro()
     {
+        castle.gameObject.SetActive(true);
         SceneChangeDataManager.Instance.IntroComplete = true;
     }
 
