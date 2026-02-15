@@ -12,17 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 0c29c7a1a8f5a924289c660e8ac4b094
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/DialogueTestScene.unity
-    guid: 88d4f18171ed0ed4b9673fd7346e532b
+    path: Assets/Scenes/OverWorld.unity
+    guid: 3e833e5481d153d4485fb311c4d819a2
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: 552ff8971336d134babf9c104e0eaea4
   - enabled: 1
-    path: Assets/Scenes/OverWorld.unity
-    guid: 3e833e5481d153d4485fb311c4d819a2
+    path: Assets/Scenes/GameOver.unity
+    guid: babc44107d57a434fa24642add42a210
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

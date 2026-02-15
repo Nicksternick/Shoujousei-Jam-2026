@@ -65,6 +65,8 @@ public class Attack : MonoBehaviour
         }
 
         headsUpCounter = spawnPositions.Count;
+
+        AudioManager.Instance.PlaySound(SoundType.AttackSpawn);
     }
 
     public void UpdateAttack()

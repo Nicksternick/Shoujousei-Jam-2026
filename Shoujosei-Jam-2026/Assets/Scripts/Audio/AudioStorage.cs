@@ -6,12 +6,18 @@ public enum MusicTrack
 {
     Overworld,
     Combat,
-    BossMusic
+    BossMusic,
+    Death
 }
 
 public enum SoundType
 {
-    Hit
+    Hit,
+    PlayerDeath,
+    BossDeath,
+    EnemyHit,
+    PlayerAttack,
+    AttackSpawn
 }
 
 [Serializable] class SoundTuple { public SoundType soundType; public AudioClip soundClip; }

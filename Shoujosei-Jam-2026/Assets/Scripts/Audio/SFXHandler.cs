@@ -7,6 +7,6 @@ public class SFXHandler : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         soundSource.clip = clip;
-        soundSource.Play();
+        soundSource.PlayOneShot(clip);
     }
 }

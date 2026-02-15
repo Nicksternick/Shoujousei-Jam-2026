@@ -62,9 +62,6 @@ public class OverworldPlayerController : MonoBehaviour
             inDialogue = false;
         }
 
-        Debug.Log("First Battle: " + SceneChangeDataManager.Instance.FirstEncounterComplete);
-        Debug.Log("First Post: " + SceneChangeDataManager.Instance.FirstEncounterDialogueComplete);
-
         if (SceneChangeDataManager.Instance.FirstEncounterComplete && !SceneChangeDataManager.Instance.FirstEncounterDialogueComplete)
         {
             dialogueRunner.StartDialogue("PostFirstEncounter");
