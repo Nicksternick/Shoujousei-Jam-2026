@@ -1,21 +1,23 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager Instance;
     [SerializeField] private BattlePlayerController player;
     [SerializeField] private BattleArena arena;
-    [SerializeField] private TextMeshProUGUI text;
-    [SerializeField] private TextMeshProUGUI text2;
-    [SerializeField] private Slider slider;
+    [SerializeField] private Slider playerSlider;
+    [SerializeField] private Slider enemySlider;
     [SerializeField] private EnemyHandler enemy;
 
     [SerializeField] private SpriteRenderer fadeSprite;
 
-    [SerializeField] private AudioSource hit;
-    [SerializeField] private AudioSource music;
+    [SerializeField] private DialogueRunner dialogueRunner;
+
+    private bool prepareBattle = false;
 
     private bool battleStarted = false;
 
@@ -28,19 +30,35 @@ public class BattleManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        AudioManager.Instance.StopMusic();
+        if (SceneChangeDataManager.Instance.PreviousEncounterTrigger == "FirstEncounterTrigger")
+        {
+            dialogueRunner.StartDialogue("FirstBattleDialogue");
+        }
+        else
+        {
+            prepareBattle = true;
+        }
+    }
+
     private void FixedUpdate()
     {
-        if (fadeSprite.color.a >= 0)
+        if (prepareBattle)
         {
-            Color color = fadeSprite.color;
-            color.a -= 0.02f;
-            fadeSprite.color = color;
-        }
-        else if (!battleStarted)
-        {
-            enemy.SetupEnemy(SceneChangeDataManager.Instance.EnemyData);
-            battleStarted = true;
-            music.Play();
+            if (fadeSprite.color.a >= 0)
+            {
+                Color color = fadeSprite.color;
+                color.a -= 0.02f;
+                fadeSprite.color = color;
+            }
+            else if (!battleStarted)
+            {
+                enemy.SetupEnemy(SceneChangeDataManager.Instance.EnemyData);
+                battleStarted = true;
+                AudioManager.Instance.PlayMusic(MusicTrack.Combat);
+            }
         }
     }
 
@@ -53,23 +71,29 @@ public class BattleManager : MonoBehaviour
     {
         if (health != 100)
         {
-            hit.Play();
+            AudioManager.Instance.PlaySound(SoundType.Hit);
         }
         
         if (health <= 0)
         {
-            GetComponent<Debug_Scene>().ChangeScene("ALPHA_START");
+            
         }
-        slider.value = health;
+        playerSlider.value = health;
     }
 
     public void UpdateEnemyHealthUI(int health)
     {
         if (health <= 0)
         {
-            GetComponent<Debug_Scene>().ChangeScene("ALPHA_START");
+            AudioManager.Instance.StopMusic();
+            GetComponent<Debug_Scene>().ChangeScene("OverWorld");
         }
+        enemySlider.value = health;
     }
 
-
+    [YarnCommand("StartBattle")]
+    public void StartBattle()
+    {
+        prepareBattle = true;
+    }
 }

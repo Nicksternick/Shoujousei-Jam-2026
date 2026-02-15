@@ -42,7 +42,9 @@ public class OverworldPlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(SceneChangeDataManager.Instance.OverWorldPlayerPosition != Vector3.zero)
+        AudioManager.Instance.PlayMusic(MusicTrack.Overworld);
+
+        if (SceneChangeDataManager.Instance.OverWorldPlayerPosition != Vector3.zero)
         {
             transform.position = SceneChangeDataManager.Instance.OverWorldPlayerPosition;
         }
@@ -56,10 +58,14 @@ public class OverworldPlayerController : MonoBehaviour
             fadeSprite.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
 
-        if (SceneChangeDataManager.Instance.FirstEncounterComplete && !firstEncounterDialogueCompelete)
+        if (SceneChangeDataManager.Instance.FirstEncounterComplete && !SceneChangeDataManager.Instance.FirstEncounterDialogueComplete)
         {
             dialogueRunner.StartDialogue("PostFirstEncounter");
             inDialogue = true;
+        }
+        else if (SceneChangeDataManager.Instance.IntroComplete)
+        {
+            inDialogue = false;
         }
     }
 
@@ -106,6 +112,7 @@ public class OverworldPlayerController : MonoBehaviour
     public void OnDialogueEnd()
     {
         inDialogue = false;
+        SceneChangeDataManager.Instance.FirstEncounterDialogueComplete = true;
     }
 
     public void OnDialogueStart() 

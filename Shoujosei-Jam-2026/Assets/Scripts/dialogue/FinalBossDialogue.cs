@@ -43,7 +43,7 @@ public class FinalBossDialogue : MonoBehaviour
         SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
         SceneChangeDataManager.Instance.FinalBossComplete = true;
         //Debug.Log("Starting mini boss fight");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("BattleScene");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

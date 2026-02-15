@@ -21,8 +21,9 @@ public class OverworldEncounterManager : MonoBehaviour
                     SceneChangeDataManager.Instance.EnemyData = enemyData;
                     SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
                     SceneChangeDataManager.Instance.FirstEncounterComplete = true;
+                    SceneChangeDataManager.Instance.FirstEncounterDialogueComplete = false;
                     SceneChangeDataManager.Instance.PreviousEncounterTrigger = gameObject.name;
-                    SceneManager.LoadScene("SampleScene");
+                    SceneManager.LoadScene("BattleScene");
                 }
             }
         }

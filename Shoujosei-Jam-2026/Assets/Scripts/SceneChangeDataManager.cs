@@ -6,6 +6,7 @@ public class SceneChangeDataManager
     private EnemyData enemyData;
     private Vector3 overWorldPlayerPosition;
     private bool firstEncounterComplete;
+    private bool firstEncounterDialogueComplete = false;
     private bool miniBossCompelete = false;
     private bool finalBossCompelete = false;
     private bool introComplete = false;
@@ -62,6 +63,12 @@ public class SceneChangeDataManager
     {
         get { return firstEncounterComplete; }
         set { firstEncounterComplete = value; }
+    }
+
+    public bool FirstEncounterDialogueComplete
+    {
+        get { return firstEncounterDialogueComplete; }
+        set { firstEncounterDialogueComplete = value; }
     }
 
     public string PreviousEncounterTrigger

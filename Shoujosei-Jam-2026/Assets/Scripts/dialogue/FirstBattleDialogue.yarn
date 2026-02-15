@@ -6,5 +6,5 @@ Emilia: Disturbing the peace in this beautiful castle... How nauseating.
 Widow: <b>HISSS</b>
 Emilia: I don't mind playing exterminator today.
 Dodge the enemies attack and fight back by charging up each rose
-<<StartBattle *Nick Add The Name Of The Game Object That Starts The Fight>>
+<<StartBattle BattleManager>>
 ===

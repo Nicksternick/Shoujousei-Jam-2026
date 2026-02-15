@@ -42,7 +42,7 @@ public class MiniBossDialogue : MonoBehaviour
         SceneChangeDataManager.Instance.OverWorldPlayerPosition = player.transform.position;
         SceneChangeDataManager.Instance.MiniBossComplete = true;
         //Debug.Log("Starting mini boss fight");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("BattleScene");
     }
 
     private void Start()
