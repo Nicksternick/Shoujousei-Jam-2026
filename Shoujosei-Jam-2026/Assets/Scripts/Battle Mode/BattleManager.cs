@@ -23,9 +23,20 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] private DialogueRunner dialogueRunner;
 
+    [SerializeField] private SpriteRenderer deathBG;
+    [SerializeField] private SpriteRenderer playerPotrait;
+    [SerializeField] private SpriteRenderer enemyPotrait;
+    [SerializeField] private SpriteRenderer playerDeathSquare;
+    [SerializeField] private SpriteRenderer enemyDeathSquare;
+
+
+
     private bool prepareBattle = false;
 
     private bool battleStarted = false;
+
+    private bool killPlayer = false;
+    private bool killEnemy = false;
 
     public BattleArena Arena => arena;
     public Vector3 PlayerPosition => player.transform.position;
@@ -51,6 +62,42 @@ public class BattleManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (killPlayer)
+        {
+            if (playerDeathSquare.color.a < 2f)
+            {
+                Color color = playerDeathSquare.color;
+                color.a += 0.05f;
+                playerDeathSquare.color = color;
+                Vector3 transform = playerPotrait.transform.position;
+                transform.x -= 0.1f;
+                playerPotrait.transform.position = transform;
+            }
+            else
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+
+        if (killEnemy)
+        {
+            if (enemyDeathSquare.color.a < 2f)
+            {
+                Color color = enemyDeathSquare.color;
+                color.a += 0.05f;
+                enemyDeathSquare.color = color;
+                Vector3 transform = enemyPotrait.transform.position;
+                transform.x += 0.1f;
+                enemyPotrait.transform.position = transform;
+            }
+            else
+            {
+                SceneManager.LoadScene("OverWorld");
+            }
+        }
+
+        if ( killPlayer || killEnemy) { return; }
+
         if (prepareBattle && !battleStarted)
         {
             EnemyData enemyData = SceneChangeDataManager.Instance.EnemyData;
@@ -120,18 +167,40 @@ public class BattleManager : MonoBehaviour
 
     public void UpdateEnemyHealthUI(int health)
     {
+        if (health != enemySlider.maxValue)
+        {
+            AudioManager.Instance.PlaySound(SoundType.EnemyHit);
+        }
+
         if (health <= 0)
         {
             AudioManager.Instance.StopMusic();
-            EndBattle(false);
-            GetComponent<Debug_Scene>().ChangeScene("OverWorld");
+            EndBattle(true);
         }
         enemySlider.value = health;
     }
 
     private void EndBattle(bool enemyDied)
     {
-
+        battleStarted = false;
+        deathBG.gameObject.SetActive(true);
+        if (enemyDied)
+        {
+            if (SceneChangeDataManager.Instance.EnemyData.enemySprite == EnemyType.Basic)
+            {
+                AudioManager.Instance.PlaySound(SoundType.PlayerDeath);
+            }
+            else
+            {
+                AudioManager.Instance.PlaySound(SoundType.BossDeath);
+            }
+            killEnemy = true;
+        }
+        else
+        {
+            AudioManager.Instance.PlaySound(SoundType.PlayerDeath);
+            killPlayer = true;
+        }
     }
 
     [YarnCommand("StartBattle")]

@@ -358,7 +358,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioStorage
   sounds:
   - soundType: 0
-    soundClip: {fileID: 8300000, guid: f666d9ab2b078274ca1dd8213907743e, type: 3}
+    soundClip: {fileID: 8300000, guid: 6a40179468f09574382327f064042fda, type: 3}
+  - soundType: 1
+    soundClip: {fileID: 8300000, guid: 55863cee051510c4286b489afeb2c4b4, type: 3}
+  - soundType: 2
+    soundClip: {fileID: 8300000, guid: b1a84592717640c49b57ff9e66b4326a, type: 3}
+  - soundType: 3
+    soundClip: {fileID: 8300000, guid: 58b87f86ed215154996ec9279aa2ad7a, type: 3}
+  - soundType: 4
+    soundClip: {fileID: 8300000, guid: 6f232c99824c093488aa4383e8b38ca2, type: 3}
+  - soundType: 5
+    soundClip: {fileID: 8300000, guid: 178b7c1d9122ea24386771d72935c111, type: 3}
   tracks:
   - musicType: 1
     musicClip: {fileID: 8300000, guid: f1b5f3683e00d3b4798b81b602f5cb0e, type: 3}
@@ -366,6 +376,8 @@ MonoBehaviour:
     musicClip: {fileID: 8300000, guid: d935a1620f256f8419c7ad752203116e, type: 3}
   - musicType: 2
     musicClip: {fileID: 8300000, guid: 50458bfce83a92b4794095c0ea45a66c, type: 3}
+  - musicType: 3
+    musicClip: {fileID: 8300000, guid: 1301baee11e27094791f4d37fc3a722e, type: 3}
 --- !u!1 &1474269634
 GameObject:
   m_ObjectHideFlags: 0
