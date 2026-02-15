@@ -29,7 +29,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private SpriteRenderer playerDeathSquare;
     [SerializeField] private SpriteRenderer enemyDeathSquare;
 
-
+    [SerializeField] private SpriteRenderer firstEnemy;
 
     private bool prepareBattle = false;
 
@@ -52,6 +52,7 @@ public class BattleManager : MonoBehaviour
         AudioManager.Instance.StopMusic();
         if (SceneChangeDataManager.Instance.PreviousEncounterTrigger == "FirstEncounterTrigger")
         {
+            firstEnemy.gameObject.SetActive(true);
             dialogueRunner.StartDialogue("FirstBattleDialogue");
         }
         else
@@ -206,6 +207,7 @@ public class BattleManager : MonoBehaviour
     [YarnCommand("StartBattle")]
     public void StartBattle()
     {
+        firstEnemy.gameObject.SetActive(false);
         prepareBattle = true;
     }
 }

@@ -6,6 +6,7 @@ public class TitleScreen : MonoBehaviour
 {
     [SerializeField] private Image fadeSprite;
     private bool start = false;
+
     public void StartGame()
     {
         start = true;

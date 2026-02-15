@@ -19,6 +19,8 @@ public class FinalBossDialogue : MonoBehaviour
     [SerializeField]
     private OverworldPlayerController player;
 
+    [SerializeField] private SpriteRenderer reveal;
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (!SceneChangeDataManager.Instance.FinalBossComplete)
@@ -77,5 +79,18 @@ public class FinalBossDialogue : MonoBehaviour
     {
         player.FadeSprite.StartFadeToBlack();
         postBossFadeActive = true;
+    }
+
+    [YarnCommand("RevealJubilee")]
+    public void RevealJubilee()
+    {
+        reveal.gameObject.SetActive(true);
+    }
+
+    [YarnCommand("GoToTitle")]
+    public void GoToTitle()
+    {
+        AudioManager.Instance.StopMusic();
+        SceneManager.LoadScene("TitleScreen");
     }
 }
