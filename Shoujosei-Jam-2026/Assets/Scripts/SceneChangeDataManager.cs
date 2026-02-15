@@ -8,9 +8,25 @@ public class SceneChangeDataManager
     private bool firstEncounterComplete;
     private bool firstEncounterDialogueComplete = false;
     private bool miniBossCompelete = false;
+    private bool miniBossDialogueCompelete = false;
     private bool finalBossCompelete = false;
     private bool introComplete = false;
+    public bool GlimpseTriggered = false;
     private string previousEncounterTriggerID;
+
+    public void ResetValues()
+    {
+        firstEncounterComplete = false;
+        firstEncounterDialogueComplete = false;
+        miniBossCompelete = false;
+        miniBossDialogueCompelete = false;
+        finalBossCompelete = false;
+        introComplete = false;
+        GlimpseTriggered = false;
+        previousEncounterTriggerID = "";
+        overWorldPlayerPosition = Vector3.zero;
+        enemyData = null;
+    }
 
     public SceneChangeDataManager()
     {
@@ -45,6 +61,12 @@ public class SceneChangeDataManager
     {
         get { return miniBossCompelete; }
         set {  miniBossCompelete = value; }
+    }
+
+    public bool MiniBossDialogueCompelete
+    {
+        get { return miniBossDialogueCompelete; }
+        set { miniBossDialogueCompelete = value; }
     }
 
     public bool IntroComplete

@@ -364,6 +364,8 @@ MonoBehaviour:
     musicClip: {fileID: 8300000, guid: f1b5f3683e00d3b4798b81b602f5cb0e, type: 3}
   - musicType: 0
     musicClip: {fileID: 8300000, guid: d935a1620f256f8419c7ad752203116e, type: 3}
+  - musicType: 2
+    musicClip: {fileID: 8300000, guid: 50458bfce83a92b4794095c0ea45a66c, type: 3}
 --- !u!1 &1474269634
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +414,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -536,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6cd70c3b52e524383291c8537ca117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManagerSceneChanger
-  sceneName: OverWorld
+  sceneName: TitleScreen
 --- !u!4 &1886223209
 Transform:
   m_ObjectHideFlags: 0

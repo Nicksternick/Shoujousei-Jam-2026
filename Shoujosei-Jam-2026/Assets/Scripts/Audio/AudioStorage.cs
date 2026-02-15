@@ -5,7 +5,8 @@ using UnityEngine;
 public enum MusicTrack
 {
     Overworld,
-    Combat
+    Combat,
+    BossMusic
 }
 
 public enum SoundType

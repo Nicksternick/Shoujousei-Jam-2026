@@ -19,6 +19,7 @@ public class EnemyHandler : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!BattleManager.Instance.BattleStarted) return;
         if (!enemyActive) return;
         if (!attackHandler.AttackInProgress)
         {

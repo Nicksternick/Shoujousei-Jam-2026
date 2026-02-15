@@ -15,6 +15,7 @@ public class BattleAbilitySpawner : MonoBehaviour
     private void FixedUpdate()
     {
         if (!BattleManager.Instance.BattleStarted) return;
+
         if (cooldownTimer > 0 && activeAbilities.Count == 0)
         {
             cooldownTimer -= 1;
@@ -23,7 +24,7 @@ public class BattleAbilitySpawner : MonoBehaviour
         {
             foreach (BattleAbility ability in abilities.abilities)
             {
-                Vector3 position = BattleManager.Instance.Arena.GetArenaPoint(ArenaPoints.Random, 3);
+                Vector3 position = BattleManager.Instance.Arena.GetArenaPoint(ArenaPoints.Random, 2.5f);
 
                 BattleAbility abl = Instantiate(ability);
 

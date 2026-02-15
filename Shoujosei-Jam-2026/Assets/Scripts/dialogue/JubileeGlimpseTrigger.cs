@@ -2,6 +2,7 @@ using UnityEngine;
 using Yarn.Unity;
 public class JubileeGlimpseTrigger : MonologueTrigger
 {
+    private static bool triggered;
     [SerializeField]
     private GameObject jubileeSprite;
     [SerializeField]
@@ -14,10 +15,14 @@ public class JubileeGlimpseTrigger : MonologueTrigger
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       if(jubileeAnim == null)
+        if (SceneChangeDataManager.Instance.GlimpseTriggered)
         {
+            jubileeSprite.SetActive(false);
+        }
+       if(jubileeAnim == null)
+       {
             jubileeAnim = jubileeSprite.GetComponent<Animator>();   
-        } 
+       } 
     }
 
     // Update is called once per frame
@@ -44,6 +49,7 @@ public class JubileeGlimpseTrigger : MonologueTrigger
                 {
                     jubileeSprite.SetActive(false);
                     player.OnDialogueEnd();
+                    SceneChangeDataManager.Instance.GlimpseTriggered = true;
                 }
             }
         }
@@ -52,7 +58,7 @@ public class JubileeGlimpseTrigger : MonologueTrigger
     public override void OnTriggerEnter2D(Collider2D other)
     {
         player = other.GetComponent<OverworldPlayerController>();
-        if (player)
+        if (player && !SceneChangeDataManager.Instance.GlimpseTriggered)
         {
             player.OnDialogueStart();
             SpriteMoving = true;

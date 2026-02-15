@@ -15,7 +15,9 @@ public class OverworldPlayerController : MonoBehaviour
     [SerializeField] private IntroMaskController fadeSprite;
     [SerializeField] private DialogueRunner dialogueRunner;
 
-    private bool firstEncounterDialogueCompelete;
+    private SpriteRenderer playerSprite;
+
+    private static bool firstEncounterDialogueCompelete;
     private Interactable interactable;
     public Interactable Interactable 
     { 
@@ -42,6 +44,7 @@ public class OverworldPlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerSprite = GetComponent<SpriteRenderer>();
         AudioManager.Instance.PlayMusic(MusicTrack.Overworld);
 
         if (SceneChangeDataManager.Instance.OverWorldPlayerPosition != Vector3.zero)
@@ -56,16 +59,17 @@ public class OverworldPlayerController : MonoBehaviour
         else
         {
             fadeSprite.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            inDialogue = false;
         }
+
+        Debug.Log("First Battle: " + SceneChangeDataManager.Instance.FirstEncounterComplete);
+        Debug.Log("First Post: " + SceneChangeDataManager.Instance.FirstEncounterDialogueComplete);
 
         if (SceneChangeDataManager.Instance.FirstEncounterComplete && !SceneChangeDataManager.Instance.FirstEncounterDialogueComplete)
         {
             dialogueRunner.StartDialogue("PostFirstEncounter");
+            SceneChangeDataManager.Instance.FirstEncounterDialogueComplete = true;
             inDialogue = true;
-        }
-        else if (SceneChangeDataManager.Instance.IntroComplete)
-        {
-            inDialogue = false;
         }
     }
 
@@ -79,7 +83,13 @@ public class OverworldPlayerController : MonoBehaviour
             position += velocity;
             transform.position = position;
 
-            if(direction.x > 0 || direction.y > 0)
+            if (direction.x != 0)
+            {
+                playerSprite.flipX = (direction.x < 0);
+            }
+            
+
+            if (direction.x > 0 || direction.y > 0)
             {
                 animController.SetFloat("Direction", 1);
                 animController.SetFloat("Mag", 1);
@@ -112,7 +122,6 @@ public class OverworldPlayerController : MonoBehaviour
     public void OnDialogueEnd()
     {
         inDialogue = false;
-        SceneChangeDataManager.Instance.FirstEncounterDialogueComplete = true;
     }
 
     public void OnDialogueStart() 

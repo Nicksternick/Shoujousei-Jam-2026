@@ -14,7 +14,6 @@ public class MiniBossDialogue : MonoBehaviour
     private EnemyData enemyData;
     [SerializeField]
     private OverworldPlayerController player;
-    private bool postFightDialogueActive;
     private bool jubileeExit;
     [SerializeField]
     private GameObject jubilee;
@@ -52,11 +51,11 @@ public class MiniBossDialogue : MonoBehaviour
 
     public void Update()
     {
-        if (SceneChangeDataManager.Instance.MiniBossComplete && !postFightDialogueActive)
+        if (SceneChangeDataManager.Instance.MiniBossComplete && !SceneChangeDataManager.Instance.MiniBossDialogueCompelete)
         {
             dialogueRunner.StartDialogue(postFightNodeName);
             player.OnDialogueStart();
-            postFightDialogueActive = true;
+            SceneChangeDataManager.Instance.MiniBossDialogueCompelete = true;
         }
 
         if (jubileeExit)

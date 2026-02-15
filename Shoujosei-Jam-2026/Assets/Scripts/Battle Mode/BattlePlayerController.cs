@@ -84,6 +84,8 @@ public class BattlePlayerController : MonoBehaviour
 
     private void Move()
     {
+        if (!BattleManager.Instance.BattleStarted) return;
+
         Vector3 position = transform.position;
         Vector3 velocity = move.ReadValue<Vector2>().normalized * speed;
 
